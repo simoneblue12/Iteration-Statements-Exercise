@@ -18,7 +18,7 @@
         // 2. Write a method that prints every third number from 3 to 999 to the console.
         //    - Method Signature: void PrintEveryThirdNumber()
 
-        public static void UpbyThrees()
+        public static void PrintEveryThirdNumber()
         {
             for (int i = 3; i <= 999; i += 3)
             {
@@ -30,15 +30,15 @@
         //    - Method Signature: bool AreNumbersEqual(int num1, int num2)
         //    - Returns true if the numbers are equal, false otherwise.
 
-        public static void TwoNumbersSame(int numOne, int numTwo)
+        public static void AreNumbersEqual(int num1, int num2)
         {
-            if (numOne == numTwo)
+            if (num1 == num2)
             {
-                Console.WriteLine($"{numOne} and {numTwo} are the same!");
+                Console.WriteLine($"{num1} and {num2} are the same!");
             }
             else
             {
-                Console.WriteLine($"{numOne} and {numTwo} are not the same!");
+                Console.WriteLine($"{num1} and {num2} are not the same!");
             }
         }
 
@@ -46,7 +46,7 @@
         //    - Method Signature: bool IsEven(int number)
         //    - Returns true if the number is even, false if odd.
 
-        public static void EvenOrOdd(int number)
+        public static void IsEven(int number)
         {
             if (number % 2 == 0)
             {
@@ -111,7 +111,7 @@
         //    - Method Signature: bool IsInRange(int number)
         //    - Returns true if the number is within the range, false otherwise.
 
-        public static void TenRange()
+        public static void IsInRange()
         {
             Console.WriteLine("Please give me a number;");
             var canParse = int.TryParse(Console.ReadLine(), out int userNumber);
@@ -136,7 +136,7 @@
         //    - Method Signature: void DisplayMultiplicationTable(int number)
         //    - Should print each line in the format: "1 * number = result"
 
-        public static void MultiplyThroughTwelve(int number)
+        public static void DisplayMultiplicationTable(int number)
         {
             for (int i = 1; i <= 12; i++)
             {
@@ -149,13 +149,13 @@
         static void Main(string[] args)
         {
             //PrintNumbers1000(); 
-            //UpbyThrees();
-            //TwoNumbersSame(1, 2);
-            //EvenOrOdd(2);
+            //PrintEveryThirdNumber();
+            //AreNumbersEqual(1, 2);
+            //IsEven(2);
             //IsPositive(2);
-            //CanVote();
-            //TenRange();
-            //MultiplyThroughTwelve(10);
+            //CanVote(19);
+            //IsInRange(13);
+            //DisplayMultiplicationTable(10);
         }
     }
 }
